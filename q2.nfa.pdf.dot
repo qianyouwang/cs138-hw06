@@ -1,0 +1,12 @@
+digraph {
+  node [shape=point]; __start;
+  node [shape = circle]; q0;
+  node [shape = doublecircle]; q1;
+  node [shape = circle]; q2;
+
+  __start -> q0 [arrowhead = empty];
+  q0 -> q2 [label = "a"];
+  q2 -> q1 [label = "a"];
+  q2 -> q2 [label = "a"];
+  q2 -> q1 [label = "b"];
+}
